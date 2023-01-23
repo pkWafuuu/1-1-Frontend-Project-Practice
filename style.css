@@ -108,6 +108,11 @@ button:hover {
    width: 90%;
 }
 
+.center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 /************ 
 
     NAV BAR 
@@ -325,6 +330,8 @@ input:focus {
 }
 
 .img-column--container {
+   display: flex;
+   align-items: center;
    width: 50%;
 }
 
@@ -428,9 +435,16 @@ input:focus {
    margin: 32px 32px 0 0;
 }
 
+.value__i-header--container {
+   display: flex;
+   align-items: center;
+   margin-bottom: 16px;
+}
+
 .value__head-title {
    font-size: 20px;
    font-weight: 500;
+   margin-left: 12px;
    color: #243E63;
 }
 
@@ -438,4 +452,20 @@ input:focus {
    font-size: 16px;
    color: #718096;
    margin-bottom: 48px;
+}
+
+.i--wrapper {
+   border-radius: 50px;
+   width: 36px;
+   height: 36px;
+}
+
+.i-dollar--style {
+   background-color: #9AE6B4;  
+   color: #1c703a; 
+}
+
+.i-suitcase--style {
+   background-color: #FEB2B2;
+   color: #b63434;
 }
