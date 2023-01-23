@@ -34,21 +34,6 @@ a {
 }
 
 
-button {
-   background-color: #6415ff;
-   color: #fff;
-   font-size: 16px;
-   font-weight: 700;
-   padding: 12px 32px;
-   border: none;
-   border-radius: 20px;
-   transition: filter 300ms ease;
-}
-
-button:hover {
-   filter: brightness(85%);
-}
-
 .row {
     width: 100%;
     max-width: 1280px;
@@ -246,6 +231,21 @@ input::placeholder {
 
 input:focus {
    outline: none;
+}
+
+.header__button {
+   background-color: #6415ff;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 700;
+   padding: 12px 32px;
+   border: none;
+   border-radius: 20px;
+   transition: filter 300ms ease;
+}
+
+.header__button:hover {
+   filter: brightness(85%);
 }
 
 .customers-logo {
@@ -489,5 +489,105 @@ input:focus {
 }
 
 .plan--wrapper {
-   width: calc(100% / 33);
+   width: calc(100% / 3);
+   position: relative;
+   margin: 64px 32px 0 0;
+}
+
+.div--styled {
+   position: absolute;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   height: 8px;
+   border-top-left-radius: 0.5rem;
+   border-top-right-radius: 0.5rem;
+}
+
+.plan {
+   padding: 8px 32px 0 32px;
+   border-radius: 12px;
+}
+
+.green {
+   background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.red {
+   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan-sides--style {
+   border: 1px solid rgb(226, 232, 240);;
+}
+
+.plan-head--container {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   padding: 32px;
+}
+
+.plan-name {
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.plan-price {
+   padding: 8px 0;
+   font-size: 48px;
+   font-weight: 700;
+}
+
+.plan-duration {
+   font-size: 16px;
+   font-weight: 700;
+   color: #A0AEC0;
+   letter-spacing: 1px;
+}
+
+.plan-features--container {
+   display: flex;
+   flex-direction: column;
+   padding: 32px;
+   margin: 0 -32px 0 -32px;
+   border-style: solid;
+   border-top-width: 2px;
+   border-bottom-width: 2px;
+   border-left-width: 0;
+   border-right-width: 0;
+   border-color: rgb(226, 232, 240);
+}
+
+.main-feature {
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.plan-feature {
+   font-size: 16px;
+   margin-top: 20px;
+   color: #718096;
+}
+
+.plan__button--wrapper {
+   padding: 32px 64px;
+}
+
+.purple-background {
+   background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.white {
+   color: #fff;
+   --tw-border-opacity: 1;
+   border-color: rgb(102 126 234 / var(--tw-border-opacity));
+}
+
+.plan__button {
+   border: 0px;
+   font-size: 14px;
+   font-weight: 600;
+   border-radius: 50px;
+   padding: 20px 64px;
 }
