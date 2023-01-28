@@ -7,6 +7,10 @@
     font-family: 'Inter' , sans-serif;
 }
 
+body {
+   padding: 0 32px;
+}
+
 h1 {
    font-size: 48px;
 }
@@ -366,14 +370,10 @@ input:focus {
    align-items: center;
 }
 
-.step-column--container {
+.right-column-text--container {
    width: 50%;
    display: flex;
    justify-content: flex-end;
-}
-
-.step-column--wrapper {
-   width: 90%;
 }
 
 .step-section__title {
@@ -491,7 +491,7 @@ input:focus {
 .plan--wrapper {
    width: calc(100% / 3);
    position: relative;
-   margin: 64px 32px 0 0;
+   margin: 32px 16px 0 16px;
 }
 
 .div--styled {
@@ -534,7 +534,7 @@ input:focus {
 }
 
 .plan-price {
-   padding: 8px 0;
+   margin: 24px 0;
    font-size: 48px;
    font-weight: 700;
 }
@@ -589,5 +589,97 @@ input:focus {
    font-size: 14px;
    font-weight: 600;
    border-radius: 50px;
-   padding: 20px 64px;
+   padding: 16px 32px;
+   width: 100%;
+   transition: all 300ms ease;
+}
+
+.plan__button:hover {
+   transform: translateY(-1px) translateX(1px);
+   filter: brightness(95%);
+   box-shadow: -2px 8px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+/************** 
+
+   TESTIMONIAL
+
+***************/
+
+.testimonial__heading {
+   font-size: 20px;
+   font-weight: 600;
+   color: #243E63;
+   margin-top: 16px;
+}
+
+.testimonial__para {
+   font-size: 16px;
+   font-weight: 500;
+   color: #4A5568;
+   margin: 16px 0 40px 0;
+}
+
+.client--wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.client--container {
+   display: flex;
+   width: 100%;
+}
+
+.client-details--container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.rating {
+   color: rgb(255, 174, 0);
+}
+
+.client__img--wrapper {
+   max-width: 80px;
+   max-height: 80px;
+}
+
+.client__img {
+   border-radius: 50px;
+   width: 100%;
+}
+
+.client-title {
+   font-size: 16px;
+   font-weight: 500;
+   margin-top: 4px;
+   color: #7c8ba1;
+}
+
+.client__button--container {
+   display: flex;
+   max-height: 48px;
+}
+
+.divider {
+   border-right: 1px solid black;
+   margin: 12px 0;
+}
+
+.btn--slider {
+   width: 48px;
+   height: 100%;
+   border: none;
+   border-radius: 25px;
+   padding: 16px;
+   margin: 0 12px;
+   color: #6415ff;
+   transition: all 300ms ease;
+}
+
+.btn--slider:hover {
+   filter: brightness(95%);
 }
