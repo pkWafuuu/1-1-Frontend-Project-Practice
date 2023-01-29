@@ -99,6 +99,7 @@ a {
    display: flex;
    align-items: center;
    justify-content: center;
+   flex-direction: column;
 }
 /************ 
 
@@ -682,4 +683,41 @@ input:focus {
 
 .btn--slider:hover {
    filter: brightness(95%);
+}
+
+
+/************** 
+
+      FAQS
+
+***************/
+
+.questions--container {
+   width: 70%;
+}
+
+.question {
+   width: 100%;
+   padding: 20px 40px;
+   background-color: #EDF2F7;
+   border-radius: 10px;
+   margin-top: 20px;
+   transition: filter 300ms ease;
+}
+
+.question:hover {
+   filter: brightness(95%);
+}
+
+.question__title {
+   display: flex;
+   justify-content: space-between;
+   font-size: 20px;
+   font-weight: 600;
+   color: #2D3748;
+}
+
+.question__dropdown-arrow {
+   display: flex;
+   align-items: center;
 }
