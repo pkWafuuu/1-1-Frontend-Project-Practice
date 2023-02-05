@@ -928,6 +928,7 @@ footer {
       align-items: center;
       justify-content: center;
       padding: 40px 0;
+      height: 100%;
    }
 
    .header__description--wrapper {
@@ -1170,14 +1171,31 @@ footer {
 
    .footer__five-column--container {
       flex-wrap: wrap;
-      align-items: center;
       justify-content: center;
    }
 
    .footer__column {
-      padding: 0 16px;
-      margin-top: 32px;
+      width: calc(100%/2);
+      margin-top: 42px;
       text-align: center;    
+   }
+
+   .footer__three-column {
+      flex-direction: column;
+   }
+
+   .footer__copyright {
+      font-size: 14px;
+      margin-top: 32px;
+   }
+
+   .footer__social-links {
+      margin: 32px 0 0 0;
+      width: 50%;
+   }
+
+   .footer__social-link {
+      margin: 0 auto;
    }
 
 }
