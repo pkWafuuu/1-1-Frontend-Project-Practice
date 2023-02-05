@@ -29,27 +29,31 @@
             </ul>
         </nav>
         <header>
-            <div class="header__container row">
-                <div class="header__description--wrapper">
-                    <h1 class="header__title">
-                        Beautiful React Templates <span class="purple">for you.</span>
-                    </h1>
-                    <p class="header__para">
-                        Our templates are easy to setup, understand and customize.
-                        Fully modular components with a variety of pages and components
-                    </p>
-                    <form action="">
-                        <input type="email" placeholder="Your E-mail Address">
-                        <button class="header__button">Get Started</button>
-                    </form>
-                    <figure class="customers-logo--wrapper">
-                        OUR TRUSTED CUSTOMERS
-                        <img class="customers-logo" src="./assets/customers-logo.png" alt="">
+            <div class="row">
+                <div class="header__container">
+                    <div class="header__description--wrapper">
+                        <h1 class="header__title">
+                            Beautiful React Templates <span class="purple">for you.</span>
+                        </h1>
+                        <p class="header__para">
+                            Our templates are easy to setup, understand and customize.
+                            Fully modular components with a variety of pages and components
+                        </p>
+                        <div class="form--wrapper">
+                            <form action="">
+                                <input type="email" placeholder="Your E-mail Address">
+                                <button class="header__button">Get Started</button>
+                            </form>
+                        </div>
+                        <figure class="customers-logo--wrapper">
+                            OUR TRUSTED CUSTOMERS
+                            <img class="customers-logo" src="./assets/customers-logo.png" alt="">
+                        </figure>
+                    </div>
+                    <figure class="header__img--wrapper">
+                        <img class="header__img" src="./assets/landing-img.svg" alt="">
                     </figure>
                 </div>
-                <figure class="header__img--wrapper">
-                    <img class="header__img" src="./assets/landing-img.svg" alt="">
-                </figure>
             </div>
         </header>
     </section>
@@ -125,7 +129,7 @@
                             </div>
                             <div class="service">
                                 <figure class="service__img--wrapper">
-                                <img class="service__img" src="./assets/simple-icon.svg" alt="">
+                                    <img class="service__img" src="./assets/simple-icon.svg" alt="">
                                 </figure>
                                 <div class="service__description--container">
                                     <h3 class="service__title">Easy</h3>
@@ -143,7 +147,7 @@
         <section id="quality-work">
             <div class="row">
                 <div class="container">
-                    <div class="two-column--container">
+                    <div class="two-column--container reverse-row">
                         <div class="text-column--container">
                             <div class="text-column--wrapper">
                                 <div class="span__title">QUALITY WORK</div>
@@ -170,9 +174,11 @@
             <div class="row">
                 <div class="container">
                     <div class="two-column--container">
-                        <figure class="step-img__column--wrapper">
-                            <img class="img-column" src="./assets/hero-screenshot-2.png" alt="" >
-                        </figure>
+                        <div class="img-column--container">
+                            <figure class="step-img__column--wrapper">
+                                <img class="img-column" src="./assets/hero-screenshot-2.png" alt="" >
+                            </figure>
+                        </div>
                         <div class="right-column-text--container">
                             <div class="text-column--wrapper">
                                 <span class="span__title">STEPS</span>
@@ -230,9 +236,9 @@
         <section id="values">
             <div class="row">
                 <div class="container">
-                    <div class="two-column--container">
+                    <div class="two-column--container reverse-row">
                         <div class="text-column--container">
-                            <div class="values-text-section--wrapper">
+                            <div class="text-column--wrapper">
                                 <div class="span__title">VALUES</div>
                                 <h2 class="section__title">
                                     We Always Abide by Our <span class="purple">Principles.</span>
@@ -528,13 +534,7 @@
                             <div class="footer__column">
                                 <div class="footer__column--title">MAIN</div>
                                 <div class="footer__column--links">
-                                    <div class="footer__column-link--wrapper">
-                                        <a href=""
-                                           class="
-                                           footer__column--link
-                                           link__hover-effect">
-                                           Blog</a>
-                                    </div>
+                                    <a class="footer__column--link" href="">FAQs</a>
                                     <a class="footer__column--link" href="">FAQs</a>
                                     <a class="footer__column--link" href="">Support</a>
                                     <a class="footer__column--link" href="">About Us</a>
